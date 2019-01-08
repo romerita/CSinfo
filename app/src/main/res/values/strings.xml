@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">CSinfo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CSinfo</string>
+    <string name="nav_header_subtitle">cs.info@cs.info.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="lobby">Lobby</string>
+
+    <!-- Menú de navegación -->
+    <string name="home">Home</string>
+    <string name="maps">Mapas</string>
+    <string name="news">Noticias</string>
+    <string name="ar">AR</string>
+    <string name="smg">SMG</string>
+    <string name="shotgun">Escopeta</string>
+    <string name="pistol">Pistola</string>
+
+    <!-- Menú de usuario (TextView) -->
+    <string name="user">Usuario (admin)</string>
+    <string name="user_register">Usuario</string>
+    <string name="password">Contraseña (admin)</string>
+    <string name="password_register">Contraseña</string>
+    <string name="email">E-mail</string>
+
+    <!-- Botones -->
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Register</string>
+    <string name="share">Share</string>
+
+    <!-- Titulos de notícias -->
+    <string name="titulo_noticia_1">Top 5 equipos CS:GO</string>
+    <string name="titulo_noticia_2">Major FACE IT 2018</string>
+    <string name="titulo_noticia_3">Top 5 armas CS:GO</string>
+
+    <!-- Artículos de notícias -->
+    <string name="noticia_1">
+        Últimamente hay equipos a muy alto nivel, y es dificil llegar a ese nivel, por en este CardView
+        te diré el top 5 equipos de Counter Strike Global Offensive de la actualidad.
+    </string>
+    <string name="noticia_2">
+        Los mejores equipos de Counter Strike Global Offensive se enfrentan para competir por el asombroso
+        premio de 1.000.000$. Solo el mejor logrará llegar a la cima.
+    </string>
+    <string name="noticia_3">
+        En este CardView te dejo un pequeño top de las mejores armas de Counter Strike Global Offensive
+        para que no tengas dudas a la hora de jugar.
+    </string>
+
+    <!-- Noticias extendidas -->
+    <string name="noticia_1_ext">
+        Últimamente hay equipos a muy alto nivel, y es difícil llegar a ese nivel, por en este CardView
+        te diré el top 5 equipos de Counter Strike Global Offensive de la actualidad.
+
+        \n\n
+
+        El top 5 equipos de CS:GO son:\n\n
+        \t\t1. Astralis\n
+        \t\t2. Natus Vincere\n
+        \t\t3. FaZe\n
+        \t\t4. Liquid\n
+        \t\t5. mousesports
+
+        \n\n
+
+        Este año en la Major de Londres, tendremos bastante nivel compitiendo por el premio de tan solo
+        1.000.000$. Solo el mejor equipo lo conseguirá.
+    </string>
+    <string name="noticia_2_ext">
+        Este año la Major se celebrará en Londres, esta ciudad tan bonita donde siempre parece ser
+        que llueve el mayor tiempo del año.
+
+        \n\n
+
+        Los mejores equipos de Counter Strike Global Offensive se enfrentan para competir por el asombroso
+        premio de 1.000.000$. Solo el mejor logrará llegar a la cima.
+
+        \n\n
+
+        Esta es la lista de los equipos participantes en la major de este año:
+
+        \n\n
+    </string>
+    <string name="noticia_3_ext">
+        Counter Strike Global Offensive fácil de jugar, pero difícil de manejar. Por eso te voy a ayudar
+        con este pequeño top 5 de las mejores armas de este videojuego.
+
+        \n\n
+
+        \t\t <b><i>1. AK-47</i></b>
+        \n
+        Este arma es difícil de controlar el retroceso que tiene, pero una vez aprendido es  una de las
+        armas mas potentes de todo este juego.
+
+        \n\n
+
+        \t\t <b><i>2. M4A4 / M4A1-S</i></b>
+        \n
+        Con esta arma hay un dilema, y es que, tiene 30 balas en el cargador, pero es menos precisa
+        que su hermana la M4A1-s que tiene tan solo 20 balas en el cargador, así que entre estas 2 armas os
+        dejo a vuestra elección según vuestro estilo de juego.
+
+        \n\n
+
+        \t\t <b><i>3. MP9</i></b>
+        \n
+        Es uno de los subfusiles mas potentes que hay, por no decir el que mas. Tiene 30 balas en el cargador,
+        con lo cual tenemos balas de sobra para matar a un enemigo a corta distancia.\n
+        Este subfusil a media distancia puede ser ligeramente bueno, aunque difícil de controlar su retroceso.
+
+        \n\n
+
+        \t\t <b>4. AWP</b>
+        \n
+        Que decir de este riffle con sus 10 balas en el cargador, que nos da la oportunidad de hacer 2 ace
+        si fuera posible. Si es cierto que últimamente hace bastantes hitmarkers, pero en su mayoría
+        mata de 1 tiro.
+
+        \n\n
+
+        \t\t <b>5. Desert Eagle</b>
+        \n
+        Esta pistola es la mas potente que hay en el juego, matando de 1 tiro en cabeza y quitando 50HP en
+        torso/pierna. A veces es poco precisa, pero con tan solo escucharla ya asusta.
+        \n
+
+    </string>
+
+    <!-- Activities "nav (menú navegación)" -->
+    <!-- Nombre de los mapas -->
+    <string name="de_mirage">Mirage</string>
+    <string name="de_nuke">Nuke</string>
+    <string name="de_inferno">Inferno</string>
+
+
+    <!-- Nombres de las activities -->
+    <string name="title_activity_login">Log In</string>
+    <string name="title_activity_maps">Mapas</string>
+    <string name="title_activity_mirage_map">Mirage Map</string>
+    <string name="title_activity_nuke_map">Nuke Map</string>
+    <string name="title_activity_ak47_gun">AK-47</string>
+    <string name="title_activity_m4_a4_gun">M4A4</string>
+    <string name="title_activity_guns">GunsActivity</string>
+    <string name="title_activity_m4_a1_s__gun">M4A1-S</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_mp9__gun">MP9</string>
+    <string name="title_activity_mac10__gun">MAC-10</string>
+    <string name="title_activity_ump45__gun">UMP-45</string>
+    <string name="title_activity_xm1014__gun">XM1014</string>
+    <string name="title_activity_mag7__gun">MAG-7</string>
+    <string name="title_activity_nova__gun">NOVA</string>
+    <string name="title_activity_usps__gun">USP-S</string>
+    <string name="title_activity_glock18__gun">GLOCK-18</string>
+    <string name="title_activity_deserteagle__gun">DESERT EAGLE</string>
+    <string name="title_activity_ar_">Rifles de asalto</string>
+    <string name="title_activity_smg_">SMGs</string>
+    <string name="title_activity_shotgun_">Escopetas</string>
+    <string name="title_activity_pistol_">Pistolas</string>
+    <string name="title_activity_inferno_map">Inferno Map</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_new1_">Top 5 equipos CS:GO</string>
+    <string name="title_activity_new2_">Major 2018</string>
+    <string name="title_activity_new3_">Top 5 armas CS:GO</string>
+    <string name="title_activity_lobby">LobbyActivity</string>
+
+</resources>

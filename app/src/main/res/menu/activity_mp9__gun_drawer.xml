@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_nav_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/icon_nav_maps"
+            android:title="@string/maps"/>
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/icon_nav_news"
+            android:title="@string/news" />
+        <item
+            android:id="@+id/nav_ar"
+            android:icon="@drawable/icon_nav_ar"
+            android:title="@string/ar" />
+        <item
+            android:id="@+id/nav_smg"
+            android:icon="@drawable/icon_nav_smg"
+            android:title="@string/smg" />
+        <item
+            android:id="@+id/nav_shotgun"
+            android:icon="@drawable/icon_nav_shotgun"
+            android:title="@string/shotgun" />
+        <item
+            android:id="@+id/nav_pistol"
+            android:icon="@drawable/icon_nav_pistol"
+            android:title="@string/pistol" />
+    </group>
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.romera.csinfo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".maps.MirageMapActivity"
+            android:label="@string/title_activity_mirage_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".maps.NukeMapActivity"
+            android:label="@string/title_activity_nuke_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.AR.AK47_GunActivity"
+            android:label="@string/title_activity_ak47_gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.AR.M4A4_GunActivity"
+            android:label="@string/title_activity_m4_a4_gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.AR.M4A1S_GunActivity"
+            android:label="@string/title_activity_m4_a1_s__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SMG.MP9_GunActivity"
+            android:label="@string/title_activity_mp9__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SMG.MAC10_GunActivity"
+            android:label="@string/title_activity_mac10__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SMG.UMP45_GunActivity"
+            android:label="@string/title_activity_ump45__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SHOTGUN.XM1014_GunActivity"
+            android:label="@string/title_activity_xm1014__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SHOTGUN.MAG7_GunActivity"
+            android:label="@string/title_activity_mag7__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.SHOTGUN.NOVA_GunActivity"
+            android:label="@string/title_activity_nova__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.PISTOL.USPS_GunActivity"
+            android:label="@string/title_activity_usps__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.PISTOL.GLOCK18_GunActivity"
+            android:label="@string/title_activity_glock18__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".guns.PISTOL.DESERTEAGLE_GunActivity"
+            android:label="@string/title_activity_deserteagle__gun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.AR_Activity"
+            android:label="@string/title_activity_ar_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.SMG_Activity"
+            android:label="@string/title_activity_smg_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.SHOTGUN_Activity"
+            android:label="@string/title_activity_shotgun_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nav_item.PISTOL_Activity"
+            android:label="@string/title_activity_pistol_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".maps.InfernoMapActivity"
+            android:label="@string/title_activity_inferno_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".news.New1_Activity"
+            android:label="@string/title_activity_new1_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".news.New2_Activity"
+            android:label="@string/title_activity_new2_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".news.New3_Activity"
+            android:label="@string/title_activity_new3_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LobbyActivity"
+            android:label="@string/title_activity_lobby"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
