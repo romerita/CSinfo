@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.romera.csinfo.nav_item.AR_Activity;
 import com.example.romera.csinfo.nav_item.MapsActivity;
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "You are already in home", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -151,6 +153,43 @@ public class MainActivity extends AppCompatActivity
     public void noticia2 (View view) {
         Intent noticia2 = new Intent(MainActivity.this, New2_Activity.class);
         MainActivity.this.startActivity(noticia2);
+    }
+
+    // Método para compartir TextView por la aplicación WhatsApp
+    public void share(View view) {
+
+        int id = view.getId();
+
+        TextView noticia1 = findViewById(R.id.noticia1);
+        TextView noticia2 = findViewById(R.id.noticia2);
+
+        Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
+        whatsappIntent.setType("text/plain");
+        whatsappIntent.setPackage("com.whatsapp");
+
+        switch (id) {
+            case R.id.share:
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, noticia1.getText().toString());
+                try {
+                    MainActivity.this.startActivity(whatsappIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.share2:
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, noticia2.getText().toString());
+                try {
+                    MainActivity.this.startActivity(whatsappIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
+    }
+
+    public void showMore (View view) {
+        Intent showMore = new Intent(MainActivity.this, NewsActivity.class);
+        MainActivity.this.startActivity(showMore);
     }
 
 }

@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.romera.csinfo.LobbyActivity;
 import com.example.romera.csinfo.MainActivity;
@@ -35,8 +37,10 @@ public class NewsActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent home = new Intent(NewsActivity.this, MainActivity.class);
+                startActivity(home);
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
@@ -133,6 +137,46 @@ public class NewsActivity extends AppCompatActivity
     public void noticia3 (View view) {
         Intent noticia3 = new Intent(NewsActivity.this, New3_Activity.class);
         NewsActivity.this.startActivity(noticia3);
+    }
+
+    public void share(View view) {
+
+        int id = view.getId();
+
+        TextView noticia1 = findViewById(R.id.noticia1);
+        TextView noticia2 = findViewById(R.id.noticia2);
+        TextView noticia3 = findViewById(R.id.noticia3);
+
+        Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
+        whatsappIntent.setType("text/plain");
+        whatsappIntent.setPackage("com.whatsapp");
+
+        switch (id) {
+            case R.id.share:
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, noticia1.getText().toString());
+                try {
+                    NewsActivity.this.startActivity(whatsappIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.share2:
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, noticia2.getText().toString());
+                try {
+                    NewsActivity.this.startActivity(whatsappIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.share3:
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, noticia3.getText().toString());
+                try {
+                    NewsActivity.this.startActivity(whatsappIntent);
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
     }
 
 }

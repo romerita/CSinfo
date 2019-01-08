@@ -23,7 +23,6 @@ import com.example.romera.csinfo.nav_item.PISTOL_Activity;
 import com.example.romera.csinfo.nav_item.SHOTGUN_Activity;
 import com.example.romera.csinfo.nav_item.SMG_Activity;
 
-import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,8 +38,10 @@ public class RegisterActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent home = new Intent(RegisterActivity.this, MainActivity.class);
+                startActivity(home);
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
