@@ -31,3 +31,10 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
     implementation 'com.android.support:cardview-v7:28.0.0'
 }
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        def appName = "CSinfo"
+        outputFileName = appName+"-${variant.versionName}.apk"
+    }
+}

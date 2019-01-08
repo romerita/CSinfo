@@ -149,7 +149,7 @@ public class NewsActivity extends AppCompatActivity
 
         Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
         whatsappIntent.setType("text/plain");
-        whatsappIntent.setPackage("com.whatsapp");
+//        whatsappIntent.setPackage("com.whatsapp");
 
         switch (id) {
             case R.id.share:
@@ -157,7 +157,7 @@ public class NewsActivity extends AppCompatActivity
                 try {
                     NewsActivity.this.startActivity(whatsappIntent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Application not installed", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.share2:
@@ -165,7 +165,7 @@ public class NewsActivity extends AppCompatActivity
                 try {
                     NewsActivity.this.startActivity(whatsappIntent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Application not installed", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.share3:
@@ -173,7 +173,7 @@ public class NewsActivity extends AppCompatActivity
                 try {
                     NewsActivity.this.startActivity(whatsappIntent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Application not installed", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.view.GestureDetectorCompat;
-import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -132,13 +130,13 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Método para el botón LOG IN haciendo que cambie de activity
-    public void signIn (View view) {
+    public void signIn(View view) {
         Intent signIn = new Intent(MainActivity.this, LoginActivity.class);
         MainActivity.this.startActivity(signIn);
     }
 
     // Método para el botón REGISTER haciendo que cambie de activity
-    public void signUp (View view) {
+    public void signUp(View view) {
         Intent signUp = new Intent(MainActivity.this, RegisterActivity.class);
         MainActivity.this.startActivity(signUp);
     }
@@ -150,7 +148,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Método para que cuando haga click en la noticia se vaya a ella.
-    public void noticia2 (View view) {
+    public void noticia2(View view) {
         Intent noticia2 = new Intent(MainActivity.this, New2_Activity.class);
         MainActivity.this.startActivity(noticia2);
     }
@@ -165,7 +163,7 @@ public class MainActivity extends AppCompatActivity
 
         Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
         whatsappIntent.setType("text/plain");
-        whatsappIntent.setPackage("com.whatsapp");
+//        whatsappIntent.setPackage("com.whatsapp");
 
         switch (id) {
             case R.id.share:
@@ -173,7 +171,7 @@ public class MainActivity extends AppCompatActivity
                 try {
                     MainActivity.this.startActivity(whatsappIntent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Application not installed", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.share2:
@@ -181,13 +179,13 @@ public class MainActivity extends AppCompatActivity
                 try {
                     MainActivity.this.startActivity(whatsappIntent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getBaseContext(), "Whatsapp have not been installed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Application not installed", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
     }
 
-    public void showMore (View view) {
+    public void showMore(View view) {
         Intent showMore = new Intent(MainActivity.this, NewsActivity.class);
         MainActivity.this.startActivity(showMore);
     }
