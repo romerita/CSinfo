@@ -162,5 +162,8 @@
     <string name="title_activity_new2_">Major 2018</string>
     <string name="title_activity_new3_">Top 5 armas CS:GO</string>
     <string name="title_activity_lobby">LobbyActivity</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>

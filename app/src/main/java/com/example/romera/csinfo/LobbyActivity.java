@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,13 +23,31 @@ import com.example.romera.csinfo.nav_item.PISTOL_Activity;
 import com.example.romera.csinfo.nav_item.SHOTGUN_Activity;
 import com.example.romera.csinfo.nav_item.SMG_Activity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LobbyActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    List<Lobby> lobbyList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lobby);
+
+        RecyclerView recyclerView = findViewById(R.id.poem_list);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LobbyRecyclerAdapter lobbyRecyclerAdapter = new LobbyRecyclerAdapter(lobbyList);
+        recyclerView.setAdapter(lobbyRecyclerAdapter);
+
+        for (int i = 1; i < 100; i++) {
+            Lobby lobby = new Lobby();
+            lobby.title = "Sala #" + i;
+            lobby.player = "Players in lobby: " + (int)(Math.random()*5);
+            lobbyList.add(lobby);
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -35,7 +55,7 @@ public class LobbyActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Full lobbies. Can't create one.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
