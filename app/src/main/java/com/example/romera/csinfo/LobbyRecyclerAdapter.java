@@ -39,10 +39,10 @@ public class LobbyRecyclerAdapter extends RecyclerView.Adapter<LobbyRecyclerAdap
         private TextView lobbyTitle;
         private TextView lobbyPlayer;
 
-        LobbyViewHolder(View itemPoem) {
-            super(itemPoem);
-            lobbyTitle = itemPoem.findViewById(R.id.lobby_title);
-            lobbyPlayer = itemPoem.findViewById(R.id.lobby_player);
+        LobbyViewHolder(View itemLobby) {
+            super(itemLobby);
+            lobbyTitle = itemLobby.findViewById(R.id.lobby_title);
+            lobbyPlayer = itemLobby.findViewById(R.id.lobby_player);
         }
     }
 }
